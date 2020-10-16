@@ -1,0 +1,67 @@
+#my-service-container {
+  bottom: -15%;
+  z-index: -1;
+  padding-top: 80px;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+#my-service-container h1 {
+  margin-bottom: 32px;
+}
+
+#portfolio {
+  background-color: #fff;
+}
+
+#portfolio h1 {
+  width: 80%;
+  margin: auto;
+  padding: 112px 0px 64px 0px;
+}
+
+.portfolio-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+.project {
+  margin-bottom: 64px;
+  box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.1);
+  padding: 112px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.img-project {
+  margin-right: 120px;
+}
+
+.introduction-info h2 {
+  color: #434343;
+}
+
+.introduction-info p {
+  color: #434343;
+  margin: 24px 0px 24px 0px;
+}
+
+.tech-info {
+  margin-bottom: 24px;
+}
+
+.tech-info p {
+  color: #434343;
+  margin-bottom: 8px;
+}
+
+.tech-info ul {
+  padding-left: 20px;
+}
+
+.tech-info ul li {
+  margin-bottom: 8px;
+}

@@ -1,0 +1,75 @@
+footer {
+  background-color: #096aa0;
+}
+
+.footer {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 100px 0 80px 0;
+  justify-content: space-between;
+}
+
+footer h1 {
+  color: white;
+}
+
+.stay-connected-container {
+  margin-bottom: 180px;
+}
+
+.stay-connected-container p {
+  margin-bottom: 16px;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn-group img {
+  margin-right: 32px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-group img:hover {
+  transform: scale(1.2);
+}
+
+.send-message-container input,
+.send-message-container textarea {
+  padding: 10px 160px 10px 8px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  border-style: none;
+  display: inherit;
+}
+
+.send-message-container input:focus,
+.send-message-container textarea:focus {
+  outline-width: 0px;
+}
+
+.send-message-container textarea {
+  padding-right: 154px;
+}
+
+.send-message-container button {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #ee6f56;
+  font-size: 16px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.send-message-container button:focus {
+  outline-width: 0px;
+}
+
+.send-message-container button:hover {
+  transform: scale(1.1);
+}

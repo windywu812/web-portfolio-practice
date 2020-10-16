@@ -1,0 +1,255 @@
+@import "./nav-bar.css";
+@import "./jumbotron.css";
+@import "./about-me.css";
+@import "./my-service.css";
+@import "./footer.css";
+@import "./btn.css";
+@import "./responsive.css";
+@import "./card-style.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #434343;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 48px;
+  color: #096aa0;
+}
+
+h2 {
+  font-size: 32px;
+  color: #096aa0;
+}
+
+p {
+  font-size: 18px;
+  color: white;
+}
+
+body {
+  background-color: #f6f5f5;
+}
+
+@keyframes fadeFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .bg-curve-top {
+    height: 700px;
+  }
+
+  #about-me-container {
+    padding-top: 64px;
+  }
+
+  .card p,
+  .card-middle p {
+    margin-top: 8px;
+  }
+
+  .img-project {
+    margin-right: 60px;
+  }
+
+  .project {
+    padding: 64px;
+  }
+
+  .info-container {
+    margin-right: 64px;
+  }
+
+  .footer {
+    padding: 100px 0 40px 0;
+  }
+}
+
+@media screen and (max-width: 958px) {
+  p {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .nav-link,
+  .nav-link-btn {
+    margin-left: 32px;
+  }
+
+  .bg-curve-top {
+    height: 600px;
+  }
+
+  .card,
+  .card-middle {
+    padding: 16px;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  #about-me-container {
+    padding-bottom: 64px;
+  }
+
+  .card-middle {
+    margin: 32px 0px 32px 0px;
+  }
+
+  #portfolio h1 {
+    padding: 64px 0px 64px 0px;
+  }
+
+  .footer {
+    padding: 64px 0px 32px 0px;
+  }
+
+  .project {
+    padding: 32px;
+  }
+
+  .img-project {
+    margin-right: 32px;
+  }
+
+  .img-project img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  p {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .nav-links {
+    position: absolute;
+    cursor: none;
+    flex-direction: column;
+    right: 10%;
+    top: 110%;
+    opacity: 0;
+    width: 160px;
+    height: 200px;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(-20px);
+    border-radius: 10px;
+    padding-top: 12px;
+    z-index: -3;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-link-btn {
+    padding: 8px 16px 8px 16px;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  .nav-links li {
+    margin-bottom: 16px;
+    width: 100%;
+    padding-right: 32px;
+    text-align: right;
+  }
+
+  .dropdown {
+    opacity: 1;
+  }
+  .dropdown:focus + .nav-links {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+  }
+
+  .jumbotron {
+    flex-direction: column-reverse;
+  }
+
+  .bg-curve-top {
+    height: 100%;
+  }
+
+  .profile-pic {
+    width: 70%;
+  }
+
+  #about-me-container {
+    padding-top: 0px;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .info-container {
+    margin-top: 64px;
+  }
+
+  .stay-connected-container {
+    margin-bottom: 64px;
+  }
+
+  .project {
+    padding: 32px;
+    flex-direction: column;
+  }
+
+  .img-project {
+    margin-right: 16px;
+  }
+
+  .img-project img {
+    height: 400px;
+    margin-bottom: 32px;
+  }
+
+  .about-me {
+    flex-direction: column-reverse;
+  }
+
+  .card-about-me {
+    margin-right: 0px;
+    flex: 1;
+  }
+
+  .profile-container {
+    margin-bottom: 32px;
+  }
+
+  #my-service-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}

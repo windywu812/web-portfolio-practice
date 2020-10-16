@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>UTS</title>
+    <script>
+      function scrollTop() {
+        document.documentElement.scrollTop = 0;
+      }
+      function scrollBottom() {
+        document
+          .getElementById("bottom")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div class="logo">
+          <li>W24</li>
+        </div>
+        <button class="dropdown">
+          <img src="/asset/dropdown-btn.svg" alt="" />
+        </button>
+        <ul class="nav-links">
+          <li>
+            <a href="#" onclick="scrollTop();" class="nav-link"> Home </a>
+          </li>
+          <li>
+            <a href="#about-me-container" class="nav-link"> About Me </a>
+          </li>
+          <li>
+            <a href="#portfolio" class="nav-link"> Projects </a>
+          </li>
+          <li>
+            <a href="#my-service-container" class="nav-link"> My Services </a>
+          </li>
+          <li>
+            <button onclick="scrollBottom();" class="nav-link-btn">
+              Email Me
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="jumbotron">
+        <div class="introduction">
+          <h1>Windy<br />iOS Developer</h1>
+          <p>
+            Hello my name is Windy. I’m person who enjoy learning new things and
+            enjoy facing new challenge. I am also a self-taught learner. I have
+            passion about learning technology things such as programming and
+            designing. I’ve been learning iOS for 6 months and now I want to
+            expand my skills that why I want to learn web development.
+          </p>
+          <button onclick="scrollBottom();" class="btn">Email Me</button>
+        </div>
+        <div class="profile-pic">
+          <img src="/asset/profile-pic.svg" alt="" />
+        </div>
+      </section>
+      <section id="about-me-container">
+        <h1>About Me</h1>
+        <div class="about-me">
+          <div class="card-about-me">
+            <article class="about-card">
+              <h2>Skills</h2>
+              <p>
+                I’ve been learning iOS Development for 6 months. I have created
+                two apps that already in App Store. Besides that related to iOS
+                Development, I’ve have good understanding of Human Interface
+                Guidelines. Also learning about other skills like web
+                development and designing.
+              </p>
+            </article>
+            <article class="about-card-middle">
+              <h2>Personality</h2>
+              <p>
+                I’ve good personality like I eager to know more and I don’t
+                hesitate to learn that. I also able to work in group and I’m
+                really open to others opinions. I’m always looking for the way
+                to improve myself. Everytime I do about something I will do it
+                with my best.
+              </p>
+            </article>
+            <article class="about-card">
+              <h2>Interest</h2>
+              <p>
+                Besides the programming, I also have interest in music because I
+                really love music. I like to do audio engineering in my spare
+                time because it’s my hobby. I also have some portfolio/project
+                related to that. I also like to do some sport like football and
+                swimming.
+              </p>
+            </article>
+          </div>
+          <aside class="profile-container">
+            <img src="/asset/profile-pic.svg" alt="" />
+            <h2>Windy</h2>
+            <p>3rd Semester Student</p>
+            <p>
+              I’m currently a 3rd semester student in Universal University on
+              Batam. Feel enjoy with me.
+            </p>
+          </aside>
+        </div>
+      </section>
+      <section id="portfolio">
+        <h1>Personal Projects</h1>
+        <div class="portfolio-container">
+          <div id="project"></div>
+        </div>
+      </section>
+      <section id="my-service-container">
+        <h1>My Services</h1>
+        <div class="card-container">
+          <article class="card">
+            <h2>iOS App</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              possimus temporibus sapiente repellendus asperiores eos quos
+              aliquam consequatur hic, aspernatur totam voluptate earum
+              consectetur? Doloremque totam molestiae consectetur aspernatur
+              voluptas?
+            </p>
+          </article>
+          <article class="card-middle">
+            <h2>Audio Editting</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Veritatis facilis necessitatibus ullam a natus perferendis
+              laudantium doloremque atque dolorem. Architecto dolore autem
+              distinctio ducimus earum suscipit. Maxime, consectetur! Soluta,
+              libero.
+            </p>
+          </article>
+          <article class="card">
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              nisi reprehenderit nulla corporis voluptatum amet facere impedit
+              quidem fuga eius ipsum, veniam voluptatibus dolor? Eveniet
+              recusandae rem incidunt quae. Modi!
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <img class="bg-curve-top" src="/asset/bg-curve-blue.svg" alt="" />
+    <footer id="bottom">
+      <div class="footer">
+        <div class="info-container">
+          <h1>Are you interested?</h1>
+          <p>Don’t hesitate to contact me, I would be happy to meet you.</p>
+          <div class="stay-connected-container">
+            <p>Stay Connected</p>
+            <div class="btn-group">
+              <img src="/asset/linkedin.svg" alt="" />
+              <img src="/asset/instagram.svg" alt="" />
+              <img src="/asset/medium.svg" alt="" />
+            </div>
+          </div>
+          <p>Copyright ©2020 All rights reserved</p>
+        </div>
+        <div class="send-message-container">
+          <input type="text" placeholder="Email Address" />
+          <input type="text" placeholder="Full Name" />
+          <textarea
+            cols="20"
+            rows="10"
+            placeholder="Enter your message"
+          ></textarea>
+          <button>Send Message</button>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
